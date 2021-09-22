@@ -1,3 +1,76 @@
-h1 {
-    color: brown;
-}
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body{
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  .center{
+    height: 500px;
+    width: 400px;
+    background-color: #ffff;
+    padding-top:10px;
+    border-radius: 12px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+  .center h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+  }
+  #name1{
+    font-size: 25px;
+    font-weight: normal;
+    margin-left: 9%;
+    margin-top: 5%;
+  }
+  #email{
+    width: 80%;
+    height: 35px;
+    margin-left: 9%;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  #name2{
+    margin-top: 2%;
+    font-size: 25px;
+    font-weight: normal;
+    margin-left: 9%;
+    margin-top: 3%;
+  }
+  #password{
+    width: 80%;
+    height: 35px;
+    margin-left: 9%;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  #forgot-pass{
+    font-size: 17px;
+    margin-left: 9%;
+    margin-top: 2%;
+  }
+  #btn{
+    margin-top: 2%;
+    width: 80%;
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+    color: #fff;
+    font-size: 25px;
+    margin-left: 9%;
+    margin-top: 5%;
+    border: none;
+    border-radius: 5px;
+  }
+  #footer{
+    font-size: 18px;
+    text-align: center;
+  }
+  
