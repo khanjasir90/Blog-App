@@ -8,28 +8,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
-
       <div class="center">
-        <h1>Register </h1>
+        <form action="/register" method="POST">
+          <h1>Register </h1>
+          <% if (error) { %>
+            <p class="alert alert-danger" role="alert">
+                <%= error %>
+            </p>
+          <% }%>
+          <label id="name1" for="name">Name:</label> <br>
+          <input id="name" type="text" name="name" required>
 
-        <label id="name1" for="name">Name:</label> <br>
-        <input id="name" type="text" name="" required>
+          <label id="name2" for="email">Email:</label> <br>
+          <input id="email" type="email" name="email" required> <br>
 
-        <label id="name2" for="email">Email:</label> <br>
-        <input id="email" type="email" name="" required> <br>
+         <label id="name3" for="email">Password:</label> <br>
+         <input id="password" type="password" name="password"> <br>
 
-        <label id="name3" for="email">Password:</label> <br>
-        <input id="password" type="password" name=""> <br>
+         <label id="name4" for="email">Confirm Password:</label> <br>
+         <input id="password" type="password" name="cpassword" > <br>
 
-        <label id="name4" for="email">Confirm Password:</label> <br>
-        <input id="password" type="Password" name="" > <br>
-
-        <button id="btn" type="submit" name="button">REGISTER</button>
-
+         <button id="btn" type="submit" name="button">REGISTER</button>
+        </form>
         <h2 id="footer">Already Registered? <a href="/login"> Log In</a></h2>
-    </div>
-
-
-
+      </div>
   </body>
 </html>

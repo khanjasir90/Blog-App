@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
-
-      <div class="center">
-        <h1>Log In </h1>
-        <label id="name1" for="email">Email:</label> <br>
-        <input id="email" type="email" name="" required> <br>
-
-        <label id="name2" for="password">Password:</label> <br>
-        <input id="password" type="password" name="" required>
-
-        <p id="forgot-pass"><a href="#">Forgot password</a></p>
-
-        <button id="btn" type="submit" name="button">LOG IN</button>
-
-        <h2 id="footer">Not registered?<a href="/register"> Create Account</a></h2>
+    <div class="center">
+      <form action="/login" method="POST">
+          <h1>Log In </h1>
+          <% if (error) { %>
+            <p class="alert alert-danger" role="alert">
+                <%= error %>
+            </p>
+          <% }%>
+          <label id="name1" for="email">Email:</label> <br>
+          <input id="email" type="email" name="email" required> <br>
+  
+          <label id="name2" for="password">Password:</label> <br>
+          <input id="password" type="password" name="password" required>
+  
+          <button id="btn" type="submit" name="button">LOG IN</button>
+      </form>
+      <h2 id="footer">Not registered?<a href="/register"> Create Account</a></h2>
     </div>
-
-
-
   </body>
 </html>
